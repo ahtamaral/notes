@@ -1,0 +1,12 @@
+Tail recursion
+
+Arrays
+Busca: Barata em processamento. Elementos são acessados via aritmética de ponteiros ( index*sizeof(type) ). Isso funciona porque são necessariamente posições contíguas de memória.
+Inserção: Custoso. Deve-se copiar todos os elementos após o índice a ser inserido em um buffer, alocar um novo array e então copiar todos os elementos (primeira metade + item inserido + segunda metade) p/ um novo array, além de desalocar o original.
+
+Lista ligada
+	Busca: Custosa. Como os elementos não estão comportados na memória (heap) conforme o array, é necessário percorrer toda a lista ligada até achar o elemento em questão.
+Inserção: Performática. Só é necessário mudar os endereços de memória dos dois elementos em volta do elemento inserido. Custo basicamente igual a acessar um elemento no fim.
+
+Para fazer operações grandes, como acesso a bancos de dados ou manipulações de arquivos grandes, a performance entre essas estruturas faz diferença.
+

@@ -1,0 +1,17 @@
+###########################################################
+# Registrando uma máquina (ou VM) como dispositivo IotEdge
+###########################################################
+
+Baseado no tutorial:
+https://docs.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-device-linux-symmetric?view=iotedge-2020-11&tabs=azure-portal%2Cubuntu
+
+-> O jeito mais simples de criar um dispositivo é através do IotHub.
+-> Ir em "IotEdge" e adicionar dispositivo.
+-> Colocar ID (nome), hub, tipo de autenticação (chaves simétricas ous certificado X.509 -> Mais complexo e seguro).
+-> Isso vai criar um dispositivo no hub, com sua respectiva ConnectionString.
+-> Agora é necessário criar sua contrapartida física, uma máquina que rodará uma instância do IotEdge representando aquele dispositivo.
+
+-> Após instalar o aziot, para registrar seu dispositivo dê os seguintes comandos:
+
+bash$ sudo iotedge config mp --connection-string 'PASTE_DEVICE_CONNECTION_STRING_HERE'
+bash$ sudo iotedge config apply

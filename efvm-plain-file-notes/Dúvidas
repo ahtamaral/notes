@@ -1,0 +1,8 @@
+
+
+## Única propriedade que me deu pau foi a de container de origem/destino.
+## Tem que ver tbm se posso associar ao azblob uma storage account que já existe, ou se devo deixar ela criar uma nova.
+
+## Tirando isso, próximos passos:
+    -> Fazer upload automático de imagens.
+    -> Criar correspondência entre msg de detecção e imagem.

@@ -1,0 +1,18 @@
+
+######################
+# Azure blob storage #
+######################
+
+Referências:
+Geral: 
+    https://docs.microsoft.com/pt-br/azure/iot-edge/how-to-store-data-blob?view=iotedge-2020-11
+Implantação de módulo:
+    https://docs.microsoft.com/pt-br/azure/iot-edge/how-to-deploy-blob?view=iotedge-2020-11#deploy-multiple-module-instances
+
+-> Motivo principal: Dispositivo de borda opera com conectividade limitada.
+Imagens armazenadas localmente e despachadas na nuvem quando possível.
+
+Recursos desse módulo:
+    - deviceToCloudUpload
+    - deviceAutoDelete
+  

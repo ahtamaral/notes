@@ -1,0 +1,11 @@
+Life begins at 40.
+Preciso reconquistar meu attetion span, não consigo passar mais de 30 segundos sem pensar em outras coisas, estou rendendo pouco.
+Fazer minha colagem de oportunidades boas, como aquela da Petrec sobre IA
+ROS control. Ver funcionando. 
+Entender lógica de negócios no contexto de softwate corporativo. O que o backend e o banco de dados tem a ver com isso?
+Robotics and microsservices
+Clean Code (Livro)
+Erlang Actor model.
+Baixar e usar o ASDF.
+Estudar lambda calculus e paradigma funcional.
+

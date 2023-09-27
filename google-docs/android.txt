@@ -1,0 +1,26 @@
+Componentes:
+
+Activity (UI)
+Service (Background process)
+Broadcast receiver (Event manager)
+Content provider (Database API)
+
+Os componentes comunicam-se entre si por objetos do tipo Intent.
+
+Cada aplicativo roda em seu processo separadamente, isolado uns dos outros. Cada processo tem um código de permissão de usuário. Se dois aplicativos tem o mesmo código, eles rodam no mesmo processo e podem acessar arquivos um do outro.
+
+Se um app quer acessar um componente de outro, ele manda um Intent pro sistema pedindo.
+
+Em Android não existe um ponto de entrada único de um app, como uma main(), em vez disso, componentes do app podem ser invocados separadamente se necessário (Como uma activity de câmera, por exemplo)
+
+Os componentes declarados no manifest.xml são os que podem ser chamados pelo sistema.
+
+É possível registrar broadcasts dinamicamente no código
+
+Intents inicializam componentes.
+
+Intent explícito vs implicito:
+
+Explicito recebe exatamente o nome da classe que deseja-se chamar.
+
+Implícito recebe uma string bem definida da ação que deseja-se chamar (ex. Camera), e, caso mais de um app realize essa ação, o usuário deve escolher (ou ter um definido como padrão)
